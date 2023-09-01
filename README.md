@@ -1,9 +1,5 @@
 # Simple-Heston-Model
 
-Of course! Here's a structured README for a GitHub repository, summarizing our analysis and discussion:
-
----
-
 # Heston Model for Variance Process Simulation
 
 In this repository, we explore the Heston Model, a stochastic volatility model, to simulate the variance process of stock prices. Through a Monte Carlo approach, we generate multiple possible trajectories for future variances.
