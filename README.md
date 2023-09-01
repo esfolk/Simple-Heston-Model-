@@ -14,23 +14,25 @@ The Heston Model is a two-dimensional stochastic process where one process repre
 
 ## Model Formulation
 
+## Model Formulation
+
 The Heston Model is defined by two Stochastic Differential Equations (SDEs):
 
-\[
-\begin{align*}
-dX_t &= \mu X_t \, dt + \zeta_t X_t \, dW_{t1} \\
-d\zeta_t &= \kappa (\theta - \zeta_t) \, dt + \sigma_\zeta \sqrt{\zeta_t} \, dW_{t2}
-\end{align*}
-\]
+```
+dX_t = μ X_t dt + ζ_t X_t dW_{t1}
+dζ_t = κ (θ - ζ_t) dt + σ_ζ √ζ_t dW_{t2}
+```
 
 Where:
+
 - \( X_t \) is the stock price at time \( t \).
-- \( \zeta_t \) is the volatility process.
-- \( W_{t1} \) and \( W_{t2} \) are Wiener processes with correlation \( \rho \).
+- \( ζ_t \) is the volatility process.
+- \( W_{t1} \) and \( W_{t2} \) are Wiener processes with correlation \( ρ \).
 
 ## Parameter Estimation
 
-In a real-world application, parameters like \( \mu \), \( \kappa \), \( \theta \), \( \sigma \), and \( \rho \) would ideally be estimated using:
+In a real-world application, parameters like \( μ \), \( κ \), \( θ \), \( σ \), and \( ρ \) would ideally be estimated using:
+
 
 1. **Option Pricing Data**: By calibrating the Heston model to market prices of options, one can derive the implied volatilities and, consequently, the model parameters.
 2. **Sophisticated Estimation Methods**: Techniques such as Maximum Likelihood Estimation (MLE) can be employed to fit the model to historical data.
