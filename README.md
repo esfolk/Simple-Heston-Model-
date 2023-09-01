@@ -14,8 +14,6 @@ The Heston Model is a two-dimensional stochastic process where one process repre
 
 ## Model Formulation
 
-## Model Formulation
-
 The Heston Model is defined by two Stochastic Differential Equations (SDEs):
 
 ```
